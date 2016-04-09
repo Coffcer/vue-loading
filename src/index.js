@@ -48,8 +48,6 @@ export default {
         if (this.params.loadingOptions) {
             Object.assign(this.options, this.params.loadingOptions);
         }
-
-        console.log(this.params.loadingOptions);
     },
     update (value) {
         if (value) {
