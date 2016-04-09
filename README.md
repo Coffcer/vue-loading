@@ -4,6 +4,8 @@
 
 [Live demo and usage](http://coffcer.github.io/vue-loading/)
 
+Build by [vue-cli](https://github.com/vuejs/vue-cli) and [vue-cli-component](https://github.com/Coffcer/component)
+
 ## Usage
 
 ```javascript
