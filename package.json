@@ -6,7 +6,8 @@
   "version": "0.1.2",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --content-base dev/ --config ./build/dev.js --port 9090",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js",
+    "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/dev.js"
   },
   "dependencies": {
     "vue": "^1.0.0"

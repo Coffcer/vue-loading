@@ -7,7 +7,7 @@ new Vue({
     data: {
         title: 'Vue Loading',
         desc: 'Vue directive for show loading block in anything',
-        github: 'https://github.com/pespantelis/vue-crop',
+        github: 'https://github.com/coffcer/vue-loading',
         // example
         loading: {
             a: false,
