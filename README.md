@@ -4,8 +4,6 @@
 
 [Live demo and usage](http://coffcer.github.io/vue-loading/)
 
-<img width="600" src="http://coffcer.github.io/vue-loading/demo.png">
-
 ## Usage
 
 ```javascript
