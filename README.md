@@ -11,10 +11,15 @@ Build by [vue-cli](https://github.com/vuejs/vue-cli) and [vue-cli-component](htt
 ```javascript
 import loading from 'vue-loading';
 export default {
-    directives: { loading }
+    directives: { loading },
+    data () {
+        return { isLoading: false }
+    }
 }
 ```
 template: 
 ```html
-<div v-loading="loading (Boolean)" :loading-options="{ options }"></div>
+<div v-loading="isLoading" :loading-options="{ options }"></div>
+
+<button @click="isLoading = true"></button>
 ```
