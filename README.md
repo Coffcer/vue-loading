@@ -19,6 +19,7 @@ General usage
         }
     }
 </script>
+
 <template>
     <div v-loading="isLoading" :loading-options="{ options }"></div>
     <!--click the button will show the loading block.-->
