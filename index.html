@@ -18,9 +18,9 @@
                 <a class="button blue" href="javascript:;" @click="showLoading('a')">Loading this block</a>
             </div>
 
-            <div class="block" v-loading="loading.b" :loading-options="{ text: 'custom text ...' }">
+            <div class="block" v-loading="loading.b" :loading-options="{ text: 'custom ...', bg: 'rgba(255,255,255,0.85)' }">
                 <p>v-loading="loading"</p>
-                <p>:loading-options="{ text: 'custom text ...' }"</p>
+                <p>{ text: 'custom text ...' }"</p>
                 <a class="button green" href="javascript:;" @click="showLoading('b')">Loading this block</a>
             </div>
         </div>
