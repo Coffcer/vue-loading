@@ -6,7 +6,7 @@ module.exports = Object.assign({}, config, {
     entry: './dev/index.js',
     output: {
       path: path.resolve(__dirname, '../dev/dev'),
-      publicPath: '../dev/',
+      publicPath: '/dev/',
       filename: 'bundle.js'
     },
     devServer: {

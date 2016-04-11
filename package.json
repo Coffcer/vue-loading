@@ -3,7 +3,7 @@
   "description": "Vue directive for show loading block in anything",
   "author": "coffcer",
   "main": "./dist/vue-loading.js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --content-base dev/ --config ./build/dev.js --port 9090",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js",

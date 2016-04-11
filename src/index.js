@@ -3,13 +3,16 @@ import './style.css';
 export default {
     params: ['loadingOptions'],
     handleShow () {
-        if (window.getComputedStyle(this.el).position === 'static') {
+        let position = window.getComputedStyle(this.el).position;
+
+        if (position === 'static' || position === '') {
             this.static = true;
             this.el.style.position = 'relative';
         }
 
         let box = document.createElement('div');
         box.className = 'vue-loading';
+        box.style.backgroundColor = this.options.bg;
         this.el.appendChild(box);
 
         let msg = document.createElement('div');
@@ -41,8 +44,10 @@ export default {
         this.loadingBox = null;
         // is first call update
         this.first = true;
+        // default options
         this.options = {
-            text: 'Loading ...'
+            text: 'Loading ...',
+            bg: 'rgba(230, 233, 236, 0.8)'
         };
 
         if (this.params.loadingOptions) {
