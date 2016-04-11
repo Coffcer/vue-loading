@@ -3,12 +3,21 @@
   "description": "Vue directive for show loading block in anything",
   "author": "coffcer",
   "main": "./dist/vue-loading.js",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --content-base dev/ --config ./build/dev.js --port 9090",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js",
     "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/dev.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coffcer/vue-loading"
+  },
+  "keywords": [
+    "vue",
+    "directive",
+    "loading"
+  ],
   "dependencies": {
     "vue": "^1.0.0"
   },

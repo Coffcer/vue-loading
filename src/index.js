@@ -51,6 +51,7 @@ export default {
     },
     update (value) {
         if (value) {
+            this.first = false;
             this.handleShow();
         } else {
             if (this.first) {
