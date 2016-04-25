@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Vue Loading</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -19,7 +21,8 @@
             </div>
 
             <div class="block" v-loading="loading.b" :loading-options="{ text: 'custom ...', bg: 'rgba(255,255,255,0.85)' }">
-                <p>custom text and background"</p>
+                <p>v-loading="loading"</p>
+                <p>:loading-options="{ text: 'custom text ...' }"</p>
                 <a class="button green" href="javascript:;" @click="showLoading('b')">Loading this block</a>
             </div>
         </div>
