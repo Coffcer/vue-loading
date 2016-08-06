@@ -35,7 +35,7 @@ export default {
             }
         });
 
-        this.loadingBox.style.opacity = 0;
+        this.loadingBox.style.opacity = 0.01;
     },
     bind () {
         // is static
